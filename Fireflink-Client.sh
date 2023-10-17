@@ -18,7 +18,7 @@ echo "installed chrome"
 echo "Downloading Client"
 curl -O  "https://testyantrademourl.s3.ap-south-1.amazonaws.com/FireFlinkClient-1.0.12.AppImage"
 
-chmod 777 FireFlinkClient-1.0.12.AppImage
+chmod 777 FireFlinkClient-1.0.12.AppImage > /dev/null 2>&1 &
 ./FireFlinkClient-1.0.12.AppImage
 
 
