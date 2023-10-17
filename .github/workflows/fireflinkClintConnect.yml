@@ -17,7 +17,8 @@ jobs:
      
     - name: Make Shell Script Executable
       run: |
-        chmod +x ./path/to/your/Fireflink-Client.sh
+        chmod +x ./Fireflink-Client.sh
+        chmod +x ./Signin.sh
 
     - name: Run Shell Scripts
       run: |
