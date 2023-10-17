@@ -14,6 +14,9 @@ jobs:
       run: |
         sudo apt-get update
         echo "Set up completed"
+    
+    - uses: browser-actions/setup-chrome@v1
+    - run: chrome --version
      
     - name: Make Shell Script Executable
       run: |
