@@ -33,7 +33,7 @@ jobs:
         
     - name: Signing in to Fireflink
       run: |
-        ./Signin.sh ${{ inputs.parameter1 }} ${{ inputs.parameter1 }}
+        ./Signin.sh ${{ secrets.un }} ${{ secrets.pwd }}
 
     - uses: GuillaumeFalourd/wait-sleep-action@v1
       with:
