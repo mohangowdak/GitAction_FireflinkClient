@@ -18,11 +18,16 @@ jobs:
         chmod +x ./Fireflink-Client.sh
         chmod +x ./Signin.sh
 
-    - name: Run Shell Scripts
+    - name: Install Client into machine
       run: |
         ./Fireflink-Client.sh
         
-    - name: Run Shell Scripts
+    - name: Signing in to Fireflink
       run: |
         ./Signin.sh
+
+    - uses: GuillaumeFalourd/wait-sleep-action@v1
+      with:
+        time: '1h' # for 1 hour
+        
 
