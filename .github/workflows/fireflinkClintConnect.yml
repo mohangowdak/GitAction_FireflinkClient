@@ -24,9 +24,9 @@ jobs:
       run: |
         ./Fireflink-Client.sh
         
-    - name: Signing in to Fireflink
-      run: |
-        ./Signin.sh
+    # - name: Signing in to Fireflink
+    #   run: |
+    #     ./Signin.sh
 
     - uses: GuillaumeFalourd/wait-sleep-action@v1
       with:
