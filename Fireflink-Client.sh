@@ -8,6 +8,11 @@ Xvfb :99 -screen 0 1024x768x24 > /dev/null 2>&1 &
 sudo apt install libgtk-3-0 libgtk-3-dev -y
 sudo apt install libfuse2 -y
 
+echo "chrome downloading"
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo dpkg -i google-chrome-stable_current_amd64.deb
+echo "installed chrome"
+
 echo "Downloading Client"
 curl -O  "https://testyantrademourl.s3.ap-south-1.amazonaws.com/FireFlinkClient-1.0.12.AppImage"
 
