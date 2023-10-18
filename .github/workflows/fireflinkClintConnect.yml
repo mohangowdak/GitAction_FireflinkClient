@@ -22,23 +22,21 @@ jobs:
       run: |
         chmod +x ./Fireflink-Client.sh
         chmod +x ./Signin.sh
-        chmod +x ./Practice.sh
 
     - name: Install Client into machine
       run: |
-        ./Practice.sh ${{vars.USERNAME}}
-        #./Fireflink-Client.sh
+        ./Fireflink-Client.sh
         
     - uses: GuillaumeFalourd/wait-sleep-action@v1
-      #with:
-      #  time: '60s'
+      with:
+        time: '${{vars.STEP_WAIT}}m'
         
     - name: Signing in to Fireflink
       run: |
-       # ./Signin.sh ${{vars.USERNAME}} ${{vars.PASSWORD}}
+        ./Signin.sh ${{vars.USERNAME}} ${{vars.PASSWORD}}
 
     - uses: GuillaumeFalourd/wait-sleep-action@v1
-      #with:
-        #time: '1h' # for 1 hour
+      with:
+        time: '${{vars.WAIT}}h'
         
 
