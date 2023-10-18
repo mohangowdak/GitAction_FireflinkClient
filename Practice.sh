@@ -1,1 +1,1 @@
-echo "$USERNAME"
+echo "$1"
