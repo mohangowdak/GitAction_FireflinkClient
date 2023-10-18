@@ -33,10 +33,10 @@ jobs:
         
     - name: Signing in to Fireflink
       run: |
-        ./Signin.sh ${{vars.USERNAME}} ${{vars.PASSWORD}}
+        ./Signin.sh ${{secrets.USERNAME}} ${{secrets.PASSWORD}}
 
     - uses: GuillaumeFalourd/wait-sleep-action@v1
       with:
-        time: '${{vars.WAIT}}h'
+        time: '${{secrets.WAIT}}h'
         
 
