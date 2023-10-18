@@ -11,8 +11,8 @@ sudo apt-get update
 sudo apt-get install unzip -y
 
 echo "chrome downloading"
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-sudo dpkg -i google-chrome-stable_current_amd64.deb
+wget https://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_113.0.5672.126-1_amd64.deb
+sudo dpkg -i google-chrome-stable_113.0.5672.126-1_amd64.deb
 echo "installed chrome"
 
 echo "Downloading Client"
