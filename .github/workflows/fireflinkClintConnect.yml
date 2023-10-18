@@ -1,7 +1,5 @@
 name: Run Shell Scripts
 
-on: [push]
-
 jobs:
   build:
     runs-on: ubuntu-latest
