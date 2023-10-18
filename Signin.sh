@@ -4,3 +4,5 @@ curl --location 'http://127.0.0.1:8111/ci-pipeLine' \
     \"emailId\": \"$1\",
     \"password\": \"$2\"
 }"
+
+echo "Sign in script completed"
