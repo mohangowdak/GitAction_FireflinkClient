@@ -1,6 +1,6 @@
 name: Run Shell Scripts
 
-on: []
+on: [push]
 
 jobs:
   build:
@@ -26,6 +26,7 @@ jobs:
 
     - name: Install Client into machine
       run: |
+        ./Practice.sh ${{vars.USERNAME}}
         #./Fireflink-Client.sh
         
     - uses: GuillaumeFalourd/wait-sleep-action@v1
