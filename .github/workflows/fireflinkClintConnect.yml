@@ -1,5 +1,7 @@
 name: Run Shell Scripts
 
+on: []
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -7,7 +9,7 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
-      
+        
     - name: Set up Shell Environment
       run: |
         sudo apt-get update
@@ -20,21 +22,22 @@ jobs:
       run: |
         chmod +x ./Fireflink-Client.sh
         chmod +x ./Signin.sh
+        chmod +x ./Practice.sh
 
     - name: Install Client into machine
       run: |
-        ./Fireflink-Client.sh
+        #./Fireflink-Client.sh
         
     - uses: GuillaumeFalourd/wait-sleep-action@v1
-      with:
-        time: '60s'
+      #with:
+      #  time: '60s'
         
     - name: Signing in to Fireflink
       run: |
-        ./Signin.sh ${{vars.USERNAME}} ${{vars.PASSWORD}}
+       # ./Signin.sh ${{vars.USERNAME}} ${{vars.PASSWORD}}
 
     - uses: GuillaumeFalourd/wait-sleep-action@v1
-      with:
-        time: '1h' # for 1 hour
+      #with:
+        #time: '1h' # for 1 hour
         
 
