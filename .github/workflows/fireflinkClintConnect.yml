@@ -29,7 +29,7 @@ jobs:
         
     - uses: GuillaumeFalourd/wait-sleep-action@v1
       with:
-        time: '1m'
+        time: '15s'
         
     - name: Signing in to Fireflink
       run: |
